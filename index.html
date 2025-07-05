@@ -3,40 +3,69 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Homepage of Tyler Hatton during BYU Pathway WDD130.">
+        <title>WDD 131 - Dynamic Web Fundamentals - Tyler Hatton</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Tyler Hatton | Personal biographical information and home state information.">
         <meta name="author" content="Tyler Hatton">
-        <link rel="stylesheet" href="styles/styles.css">
-        <title>Tyler Hatton | WDD 131</title>
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdates.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&display=swap" rel="stylesheet">
     </head>
+
     <body>
-        <header>
-            <nav>
-                <a href="#">Home</a>
-                <a href="week01/">Week01</a>
-                <a href="https://www.linkedin.com/in/hattontyler/">Linked In Profile</a>
-                <a href="https://www.facebook.com">Facebook</a>
-            </nav>
-        </header>
-        <main>
-            <h1>Tyler Hatton | WDD 131</h1>
-            <img src="images/profile.jpg" alt="Profile pic, Tyler Hatton" width="200">
-            <p>Hello! My name is Tyler Hatton and I am from Kentucky, USA. I enjoy golf, video games, and spending time with my wife. I'm excited to learn web dev in this course.</p>
-            <ul class="box">
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/louisville-kentucky-temple" target="_blank">Louisville Kentucky Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/buenos-aires-argentina-temple" target="_blank">Buenos Aires Argentina Temple</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/temples/details/salt-lake-temple" target="_blank">Salt Lake Temple</a></li>
+      <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+
+        <nav>
+          <a href="https://www.linkedin.com/in/hattontyler/">LinkedIn</a>
+          <a href="https://byupw.instructure.com/">Canvas</a>
+          <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture</a>
+          <a href="#">Final Project</a>
+        </nav>
+      </header>
+      
+      <main>
+        <h1>Tyler Hatton</h1>
+
+        <section class="cards-wrapper">
+          <section class="card">
+            <h2 class="card-header">About Me</h2>
+            <div class="card-body">
+              <div class="info">
+                <p class="personal-information">My name is Tyler and I am from the United States. I enjoy video games and playing golf with my family. In my free time, I fly drones and travel. Pathway has been difficult, but I love to learn new things.</p>
+                <h3 class="location-title">Kentucky, United States</h3>
+                <div class="line"></div>
+                <div class="location">
+                  <div class="flag-box">
+                    <img src="./images/ky-flag-sm.png" alt="Kentucky State Flag" />
+                    <p class="location-subtitle">Official Flag of Kentucky</p>
+                  </div>
+                  <p class="location-information">Kentucky was admitted into the Union as the fifteenth state on June 1, 1792. It is known as the "Bluegrass State" in reference to Kentucky bluegrass, a species of grass introduced by European settlers, which has long supported the state's thoroughbred horse industry.</p>
+                </div>
+              </div>
+              <img class="profile-img" src="./images/tyler-headshot.jpg" alt="Professional Headshot" />
+            </div>
+          </section>
+
+          <section class="card">
+            <h2 class="card-header">Web Dev Resources</h2>
+            <ul class="resources">
+              <li><a href="https://dev.to/">Dev.to</a></li>
+              <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+              <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+              <li><a href="https://www.w3schools.com/w3css/defaulT.asp">W3 Schools</a></li>
+              <li><a href="https://www.udemy.com/">Udemy</a></li>
             </ul>
-        </main>
-        <aside class="box">
-            <h2>Kentucky, USA</h2>
-            <img src="images/horse.jpg" alt="A horse in Kentucky.">
-            <p>Kentucky is a state in the United States. It is most well known for it's bourbon, horse racing, and KFC restaurants. It is bordered by Illinois, Indiana, Ohio, West Virginia, Virginia, Tennessee, and Missouri.</p>
-        </aside>
-        <footer>
-            <p>&copy; 2025 | Tyler Hatton | Kentucky, USA</p>
-        </footer>
+          </section>
+        </section>
+      </main>
+      
+      <footer class="footer">
+        <span id="currentyear"></span>
+        <p id="last-modified"></p>
+      </footer>
     </body>
-    <!--
-    07/03/2025
-    -->
+
 </html>

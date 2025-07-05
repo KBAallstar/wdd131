@@ -1,0 +1,192 @@
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* CSS ELEMENTS */
+
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+header {
+  background-color: #1d4d80;
+  color: white;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  font-size: x-large;
+  padding: 1rem 0;
+}
+
+nav {
+  background-color: #2f2f2f;
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  padding: 0.5rem 7rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+	text-decoration: underline;
+  color: greenyellow;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main h1 {
+  color: #222;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:first-of-type {
+  flex: 3;
+}
+
+.card:last-of-type {
+  flex: 1;
+}
+
+.card-header {
+  background-color: #1f4f75;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 2fr .5fr;
+  grid-template-areas:
+    "info image"
+    "location image";
+  gap: 1rem;
+}
+
+.info {
+  grid-area: info;
+}
+
+.card-body .personal-information {
+  flex: 2;
+  margin: 2rem 0 0 2rem;
+}
+
+.location-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.line {
+  width: 80%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 auto 1rem auto;
+}
+
+.profile-img {
+  grid-area: image;
+  width: 20vw;
+  min-width: 120px;
+  max-width: 200px;
+  border-radius: 5px;
+  align-content: center;
+  align-self: auto;
+  padding-right: 2rem;
+}
+
+.location {
+  grid-area: location;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+
+.flag-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  margin-bottom: 2rem;
+}
+
+.flag-box img {
+  width: 100px;
+  height: auto;
+}
+
+.location-subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.location-information {
+  flex: 1;
+}
+
+.resources {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 0 0 2rem;
+}
+
+.resources a {
+  color: #000099;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1d4d80;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
