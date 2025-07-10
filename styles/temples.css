@@ -1,0 +1,75 @@
+/* Base mobile styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+header {
+  background-color: #4b006e;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  display: inline-block;
+}
+
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #4b006e;
+}
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  background-color: #6f42c1;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+footer {
+  background-color: #4b006e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

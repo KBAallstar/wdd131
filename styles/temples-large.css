@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+    header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap; /* Optional: wraps nav below h1 on mid-size screens */
+    }
+
+    header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: white;
+    }
+    
+    #menu {
+    display: none; /* hide hamburger in desktop */
+    }
+
+    #nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: transparent;
+    }
+
+    nav {
+    display: flex !important;
+    justify-content: flex-end;
+    gap: 1rem;
+    }
+
+    .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
