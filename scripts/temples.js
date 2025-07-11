@@ -1,12 +1,9 @@
-// Footer Date Info
 const currentYear = new Date().getFullYear();
 const lastModified = document.lastModified;
 
 document.getElementById("currentyear").textContent = `© ${currentYear}, Tyler Hatton, United States`;
 document.getElementById("last-modified").textContent = `Last Modified: ${lastModified}`;
 
-/*
-// Hamburger Menu Toggle
 const menuButton = document.getElementById("menu");
 const navMenu = document.getElementById("nav-menu");
 
@@ -15,4 +12,3 @@ menuButton.addEventListener("click", () => {
   navMenu.style.display = isVisible ? "none" : "flex";
   menuButton.innerHTML = isVisible ? "&#9776;" : "✖";
 });
-*/
