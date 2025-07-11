@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    flex-wrap: wrap; /* Optional: wraps nav below h1 on mid-size screens */
+    flex-wrap: wrap;
     }
 
     header h1 {
@@ -14,7 +14,7 @@
     }
     
     #menu {
-    display: none; /* hide hamburger in desktop */
+    display: none;
     }
 
     #nav-menu {
