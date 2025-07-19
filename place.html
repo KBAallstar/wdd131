@@ -11,15 +11,12 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,402&family=Inter:opsz,wght@14..32,900&display=swap" rel="stylesheet">
 </head>
-
-<!-- TO DO -->
-<!-- Add Google Fonts, Step 5, Testing -->
 
 <body>
     <header>
-        <h1>Isle of Skye, Scotland</h1>
+        <h1 class="inter-bold">Isle of Skye, Scotland</h1>
     </header>
       
     <main>
@@ -30,9 +27,9 @@
             </picture>
 
             <section class="data">
-                <h2>Data</h2>
+                <h2 class="inter-bold">Data</h2>
                 <ul>
-                    <li><span>Area:</span> <span>1,656 km²</span></li>
+                    <li><span>Area:</span> <span>1,656 sq km</span></li>
                     <li><span>Population:</span> <span>10,008</span></li>
                     <li><span>Capital:</span> <span>Portree</span></li>
                     <li><span>Language:</span> <span>English, Scottish Gaelic</span></li>
@@ -45,14 +42,14 @@
 
             <section class="weather">
                 <div class="weather-header">
-                    <h2>Weather</h2>
+                    <h2 class="inter-bold">Weather</h2>
                     <img src="images/weather-icon.svg" alt="Weather icon"/>
                 </div>
                 <ul>
-                    <li><span>Temperature:</span> <span>12°C</span></li>
+                    <li><span>Temperature:</span> <span id="tempC">N/A</span></li>
                     <li><span>Conditions:</span> <span>Partly Cloudy</span></li>
-                    <li><span>Wind:</span> <span>8 km/h</span></li>
-                    <li><span>Wind Chill:</span> <span>10°C</span></li>
+                    <li><span>Wind:</span> <span id="windSpeed">N/A</span></li>
+                    <li><span>Wind Chill:</span> <span id="windChill">N/A</span></li>
                 </ul>
             </section>
         </div>
@@ -66,7 +63,5 @@
     <script>
         document.getElementById('lastModified').textContent = document.lastModified;
     </script>
-
 </body>
-
 </html>
