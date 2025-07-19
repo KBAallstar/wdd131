@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #2f4f4f;
+    --secondary-color: #8fbc8f;
+    --accent-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #2f4f4f;
+    --footer-bg: #2f4f4f;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    min-width: 300px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    min-width: 300px;
+}
+
+section.data,
+section.weather {
+    position: absolute;
+    background: var(--accent-color);
+    padding: 1rem 1.5rem;
+    border: 5px solid var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    max-width: 400px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.data h2,
+.weather h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    min-width: 300px;
+}
+
+.weather img {
+    display: block;
+    margin: 0.5rem auto;
+    width: 50px;
+}
+
+/* wider info below */
+@media (min-width: 768px) {
+    .data {
+        top: 10%;
+        left: 5%;
+    }
+
+    .weather {
+        bottom: 10%;
+        right: 5%;
+    }
+
+    .data h2,
+    .weather h2 {
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    .weather-header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        }
+
+    .weather-header h2 {
+        margin: 0;
+    }
+
+    .weather-header img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* mobile specific stacking */
+@media (max-width: 767px) {
+    section.data,
+    section.weather {
+        position: static;
+        margin: 1rem auto;
+    }
+}
