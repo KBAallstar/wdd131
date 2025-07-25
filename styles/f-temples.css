@@ -59,6 +59,7 @@ main {
   display: flex;
   flex-direction: column;
   background-color: #cecece;
+  justify-self: center;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
