@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <meta name="description" content="WDD 131 | Simple form to review a product.">
+  <meta name="author" content="Tyler Hatton">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,900&family=Roboto&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get" class="wf1">
+      <label for="productName">Product Name</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Choose a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend class="keyLabel">Overall Rating</legend>
+        <div class="rating-group">
+            <div class="rating-option">
+              <label for="star1">&#9733;</label>
+              <input type="radio" id="star1" name="rating" value="1" required>
+            </div>
+            <div class="rating-option">
+              <label for="star2">&#9733;&#9733;</label>
+              <input type="radio" id="star2" name="rating" value="2">
+            </div>
+            <div class="rating-option">
+              <label for="star3">&#9733;&#9733;&#9733;</label>
+              <input type="radio" id="star3" name="rating" value="3">
+            </div>
+            <div class="rating-option">
+              <label for="star4">&#9733;&#9733;&#9733;&#9733;</label>
+              <input type="radio" id="star4" name="rating" value="4">
+            </div>
+            <div class="rating-option">
+              <label for="star5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+              <input type="radio" id="star5" name="rating" value="5">
+            </div>
+        </div>
+      </fieldset>
+
+      <label for="installDate">Date of Installation</label>
+      <input type="date" id="installDate" name="installDate" required>
+
+      <fieldset>
+        <div class="features">
+            <legend>Which features did you find useful in the product?<br><em>(Check all that apply)</em></legend>
+            <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+            <label><input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use</label>
+            <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+            <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+        </div>
+      </fieldset>
+      
+      <label for="review">Written Review <span class="optional">(Optional)</span></label>
+      <textarea id="review" name="review" rows="4"></textarea>
+
+      <label for="username" class="name-label">Your Name <span class="optional">(Optional)</span></label>
+      <input type="text" id="username" name="username">
+
+      <input type="submit" value="Post Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 | Tyler Hatton | WDD 131 - Web Development Fundamentals</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+
+</html>

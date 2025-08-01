@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Count</title>
+  <meta name="description" content="WDD 131 | Simple, unstylized page for review counts.">
+  <meta name="author" content="Tyler Hatton">
+</head>
+
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+    <h2>Reviews submitted: <span id="reviewCount">0</span></h2>
+  </header>
+
+  <script>
+    const key = "reviewCount";
+    let count = localStorage.getItem(key);
+
+    count = count ? parseInt(count) + 1 : 1;
+
+    localStorage.setItem(key, count);
+
+    document.getElementById("reviewCount").textContent = count;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0d6e0;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #08142c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+.optional {
+  font-size: 0.9em;
+  color: #555;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  border: none;
+  margin: 2rem 0;
+  padding: 0.5rem 0;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.rating-group {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  margin-top: 0;
+}
+
+.rating-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-option label {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.name-label {
+  margin-top: 2rem;
+}
+
+input[type="submit"] {
+  margin-top: 2rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #16163f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0e0e2c;
+}
