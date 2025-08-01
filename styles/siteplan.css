@@ -1,0 +1,76 @@
+:root {
+    --primary-color: #16163f;
+    --secondary-color: #cccccc;
+    --accent-color: #82c75f;
+    --text-color: #16163f;
+    --font-headers: "Inter", sans-serif;
+    --font-body: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--font-headers);
+    color: var(--accent-color);
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--font-headers);
+    color: var(--primary-color);
+}
+
+p {
+    font-family: var(--font-body);
+    color: var(--text-color);
+}
+
+.content h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    min-width: 300px;
+}
+
+.domain, .logo, .purpose, .colors {
+    display: flex;
+    flex-direction: column;
+    background-color: #cccccc;
+    padding: 30px;
+    margin: 30px;
+}
+
+.wireframes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #cccccc;
+    padding: 30px;
+    margin: 30px;
+}
+
+.content img {
+    max-width: 500px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 120px;
+}
