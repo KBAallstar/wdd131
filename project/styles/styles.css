@@ -29,11 +29,6 @@ p {
     color: var(--text-color);
 }
 
-.content h2 {
-    text-align: center;
-    margin-top: 30px;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -46,6 +41,11 @@ header {
   color: white;
   padding: 1rem;
   position: relative;
+}
+
+header img {
+  width: 8rem;
+  margin-left: 8rem;
 }
 
 #menu {
@@ -64,7 +64,7 @@ nav {
 }
 
 nav a {
-  padding: 1rem;
+  padding: .6rem;
   text-decoration: none;
   color: white;
 }
@@ -76,7 +76,7 @@ nav a:hover {
 .hero-banner {
   width: 100vw;
   min-height: 350px;
-  background: url(`images/temple.png`) center/cover no-repeat, var(--background-color);
+  background: url("../images/hero-banner.webp") center/cover no-repeat, var(--background-color);
   position: relative;
   left: 50%;
   right: 50%;
@@ -93,7 +93,7 @@ nav a:hover {
   background: white;
   color: var(--text-color);
   border-radius: 1.2rem;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+  border: 4px solid var(--primary-color);
   padding: 2.5rem 2rem;
   max-width: 500px;
   width: 100%;
@@ -103,25 +103,131 @@ nav a:hover {
 
 .hero-box h1 {
   color: var(--accent-color);
+}
+
+.hero-box h2 {
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
-.about {
+.hero-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--background-color);
+  font-family: var(--font-headers);
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75em 2em;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--accent-color);
+  color: var(--background-color);
+  transform: translateY(-2px) scale(1.03);
+  text-decoration: none;
+  outline: none;
+}
+
+.stats-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: var(--background-color);
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.stats-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+.stats-left {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-left h2 {
+  font-size: 2rem;
+  margin-bottom: .8rem;
+  color: var(--primary-color);
+  width: 100%;
+  text-align: center;
+}
+
+.stats-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-list li {
+  font-size: 1.3rem;
+  font-family: var(--font-body);
+  color: var(--primary-color);
+}
+
+.stat-number {
+  display: inline-block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-right: 0.6rem;
+}
+
+.stats-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-image img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+}
+
+.services {
   margin: 3rem auto;
   max-width: 700px;
   background: #f7f7f7;
   border-radius: 1rem;
   padding: 2rem 1.5rem;
   text-align: center;
-  box-shadow: 0 0 12px rgba(0,0,0,0.04);
 }
 
 footer {
   background-color: var(--primary-color);
-  color: white;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+}
+
+footer p,
+footer span,
+footer a {
+  color: white !important;
 }
 
 /* larger screen styling below */
@@ -135,6 +241,10 @@ footer {
     flex-wrap: wrap;
   }
 
+  header img {
+    width: 8rem;
+  }
+
   #menu {
     display: none;
   }
@@ -144,6 +254,7 @@ footer {
     flex-direction: row;
     gap: 2rem;
     background-color: transparent;
+    margin-right: 8rem;
   }
 
   nav {
@@ -158,12 +269,34 @@ footer {
   }
 
   .hero-box {
-    padding: 3rem 4rem;
+    padding: 2rem 4rem;
     max-width: 700px;
     font-size: 1.2rem;
   }
+
+  .stats-content {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 3.5rem;
+  }
+
+  .stats-left, .stats-image {
+    flex: 1;
+  }
+
+  .stats-section {
+    padding: 3rem 1rem;
+  }
+
+  .stats-list li {
+    font-size: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 2.8rem;
+  }
   
-  .about {
+  .services {
     margin-top: 4rem;
     padding: 2.5rem 3rem;
   }
