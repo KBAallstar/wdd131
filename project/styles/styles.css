@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #002e4b;
+    --secondary-color: #cccccc;
+    --accent-color: #81c45d;
+    --text-color: #002e4b;
+    --background-color: #ffffff;
+    --font-headers: "Inter", sans-serif;
+    --font-body: "Roboto", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--font-headers);
+    color: var(--accent-color);
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--font-headers);
+    color: var(--primary-color);
+}
+
+p {
+    font-family: var(--font-body);
+    color: var(--text-color);
+}
+
+.content h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+#menu {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #82c75f;
+}
+
+.hero-banner {
+  width: 100vw;
+  min-height: 350px;
+  background: url(`images/temple.png`) center/cover no-repeat, var(--background-color);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  box-sizing: border-box;
+}
+
+.hero-box {
+  background: white;
+  color: var(--text-color);
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+  padding: 2.5rem 2rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-box h1 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.about {
+  margin: 3rem auto;
+  max-width: 700px;
+  background: #f7f7f7;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.04);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* larger screen styling below */
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 2rem;
+    background-color: transparent;
+  }
+
+  nav {
+    display: flex !important;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+  .hero-banner {
+    min-height: 200px;
+    padding: 2rem 1rem;
+  }
+
+  .hero-box {
+    padding: 3rem 4rem;
+    max-width: 700px;
+    font-size: 1.2rem;
+  }
+  
+  .about {
+    margin-top: 4rem;
+    padding: 2.5rem 3rem;
+  }
+}

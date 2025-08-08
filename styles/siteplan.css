@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #16163f;
+    --primary-color: #002e4b;
     --secondary-color: #cccccc;
-    --accent-color: #82c75f;
-    --text-color: #16163f;
+    --accent-color: #81c45d;
+    --text-color: #002e4b;
     --font-headers: "Inter", sans-serif;
     --font-body: "Roboto", sans-serif;
 }
