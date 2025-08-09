@@ -1,6 +1,6 @@
 // Get Current Year
 const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = `© ${currentYear}, Tyler Hatton, United States`;
+document.getElementById("currentyear").textContent = `© ${currentYear}, Jester FEC`;
 
 // Last modified info for footer
 const lastModified = document.lastModified;

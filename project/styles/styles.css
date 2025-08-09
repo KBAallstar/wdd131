@@ -1,32 +1,36 @@
 :root {
-    --primary-color: #002e4b;
-    --secondary-color: #cccccc;
-    --accent-color: #81c45d;
-    --text-color: #002e4b;
-    --background-color: #ffffff;
-    --font-headers: "Inter", sans-serif;
-    --font-body: "Roboto", sans-serif;
+  --primary-color: #002e4b;
+  --secondary-color: #cccccc;
+  --accent-color: #81c45d;
+  --text-color: #002e4b;
+  --background-color: #ffffff;
+  --font-headers: "Inter", sans-serif;
+  --font-body: "Roboto", sans-serif;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-family: var(--font-headers);
-    color: var(--accent-color);
+  font-family: var(--font-headers);
+  color: var(--accent-color);
 }
 
-h2, h3, h4, h5, h6 {
-    font-family: var(--font-headers);
-    color: var(--primary-color);
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headers);
+  color: var(--primary-color);
 }
 
 p {
-    font-family: var(--font-body);
-    color: var(--text-color);
+  font-family: var(--font-body);
+  color: var(--text-color);
 }
 
 body {
@@ -92,7 +96,7 @@ nav a:hover {
 .hero-box {
   background: white;
   color: var(--text-color);
-  border-radius: 1.2rem;
+  border-radius: 1.5rem;
   border: 4px solid var(--primary-color);
   padding: 2.5rem 2rem;
   max-width: 500px;
@@ -124,11 +128,11 @@ nav a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--accent-color);
   color: var(--background-color);
-  transform: translateY(-2px) scale(1.03);
   text-decoration: none;
   outline: none;
 }
@@ -199,13 +203,12 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0rem 1rem;
 }
 
 .stats-image img {
   width: 100%;
-  max-width: 340px;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+  border-radius: 1.5rem;
 }
 
 .services {
@@ -280,7 +283,8 @@ footer a {
     gap: 3.5rem;
   }
 
-  .stats-left, .stats-image {
+  .stats-left,
+  .stats-image {
     flex: 1;
   }
 
@@ -295,7 +299,7 @@ footer a {
   .stat-number {
     font-size: 2.8rem;
   }
-  
+
   .services {
     margin-top: 4rem;
     padding: 2.5rem 3rem;
