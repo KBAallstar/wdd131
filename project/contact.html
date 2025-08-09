@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Jester FEC</title>
+    <meta name="description"
+        content="Contact Us | Contact Jester FEC for investment opportunities and general inquiries.">
+    <meta name="author" content="Tyler Hatton">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body data-page="contact">
+    <header>
+        <a href="index.html">
+            <img src="images/jester-logo-white.svg" alt="Jester FEC Logo" class="site-logo">
+        </a>
+        <button id="menu" aria-label="Toggle navigation">&#9776;</button>
+        <nav id="nav-menu" aria-label="Main navigation">
+            <a href="index.html">HOME</a>
+            <a href="about.html">MEET THE TEAM</a>
+            <a href="contact.html" class="active">CONTACT US</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="page-header">
+            <h1>CONTACT US</h1>
+            <p>
+                Please fill out this form for investment opportunities or other general inquiries.
+                <br>
+                The Jester FEC team will get back to you as soon as possible.
+            </p>
+        </section>
+
+        <form id="contactForm" class="contact-box">
+            <label>Full Name
+                <input name="fullName" required placeholder="Jane Doe">
+            </label>
+            <label>Email
+                <input name="email" type="email" required placeholder="jane@example.com">
+            </label>
+            <label>Message
+                <textarea name="message" rows="5" required placeholder="How can we help?"></textarea>
+            </label>
+            <button type="submit" class="site-btn contact-btn">Submit Form</button>
+        </form>
+
+        <br>
+        <p>Number of times form has been submitted:</p>
+        <div id="submissionCount" class="muted mt"></div>
+    </main>
+
+    <footer>
+        <span id="currentyear"></span>
+        <p id="last-modified"></p>
+        <a href="siteplan.html">PROJECT SITEPLAN</a>
+    </footer>
+</body>
+
+</html>

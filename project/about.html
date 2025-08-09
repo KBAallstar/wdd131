@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Jester FEC</title>
+    <meta name="description"
+        content="About Us | Meet the team behind Jester FEC. We design and build Malibu Jack's Indoor Theme Parks throughout the United States.">
+    <meta name="author" content="Tyler Hatton">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,900&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body class="aboutus-page" data-page="about">
+    <header>
+        <a href="index.html">
+            <img src="images/jester-logo-white.svg" alt="Jester FEC Logo" class="site-logo">
+        </a>
+        <button id="menu" aria-label="Toggle navigation">&#9776;</button>
+        <nav id="nav-menu" aria-label="Main navigation">
+            <a href="index.html">HOME</a>
+            <a href="about.html" class="active">MEET THE TEAM</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="page-header">
+            <h1>ABOUT US</h1>
+            <p>
+                Jester FEC is family owned and operated. Our team takes special
+                <br>care in every aspect of the business from
+                the planning phase to the final touches.
+                <br>When we work with you, you become part of the family.
+            </p>
+        </section>
+
+        <section>
+            <div id="teamFilters" class="filters">
+                <button data-role="All" class="card card-active">All</button>
+                <button data-role="Corporate" class="card">Corporate</button>
+                <button data-role="Operations" class="card">Operations</button>
+                <button data-role="Construction" class="card">Construction</button>
+            </div>
+            <div id="teamGrid" class="team-grid"></div>
+        </section>
+
+        <section class="reachout-section">
+            <div class="reachout-inner">
+                <h2>REACH OUT TO US!</h2>
+                <p>
+                    The Jester FEC corporate office is located in the "heart of the blugrass," Lexington, KY. Please
+                    send
+                    correspondence to the address below or fill out a contact form.
+                </p>
+                <br>
+                <p>
+                    Jester FEC Corporate Office<br>
+                    220 Lexington Green Circle, Suite 310<br>
+                    Lexington, Kentucky 40503
+                </p>
+                <a href="contact.html" class="site-btn reachout-btn">CONTACT US</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span id="currentyear"></span>
+        <p id="last-modified"></p>
+        <a href="siteplan.html">PROJECT SITEPLAN</a>
+    </footer>
+</body>
+
+</html>

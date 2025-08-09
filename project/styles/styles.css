@@ -4,19 +4,38 @@
   --accent-color: #81c45d;
   --text-color: #002e4b;
   --background-color: #ffffff;
+
   --font-headers: "Inter", sans-serif;
   --font-body: "Roboto", sans-serif;
 }
 
+/* ========== Base (mobile first) ========== */
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--background-color)
+}
+
+.content {
+  margin: 0rem 3rem
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block
 }
 
 h1 {
   font-family: var(--font-headers);
-  color: var(--accent-color);
+  color: var(--primary-color)
 }
 
 h2,
@@ -25,61 +44,99 @@ h4,
 h5,
 h6 {
   font-family: var(--font-headers);
-  color: var(--primary-color);
+  color: var(--primary-color)
 }
 
 p {
   font-family: var(--font-body);
-  color: var(--text-color);
+  color: var(--primary-color);
+  font-size: 1.1rem;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  background-color: #fff;
-}
-
+/* Header */
 header {
-  background-color: var(--primary-color);
-  color: white;
+  background: var(--primary-color);
+  color: #fff;
   padding: 1rem;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-header img {
-  width: 8rem;
-  margin-left: 8rem;
+.site-logo {
+  width: 10rem;
+  height: auto;
 }
 
 #menu {
   font-size: 1.5rem;
   background: none;
   border: none;
-  color: white;
-  float: right;
-  cursor: pointer;
+  color: var(--background-color);
+  cursor: pointer
 }
 
 nav {
   display: none;
   flex-direction: column;
-  background-color: var(--primary-color);
+  background: var(--primary-color)
 }
 
 nav a {
-  padding: .6rem;
+  padding: 1rem;
   text-decoration: none;
-  color: white;
+  color: var(--background-color)
 }
 
 nav a:hover {
-  color: #82c75f;
+  color: var(--accent-color)
 }
 
+nav a.active {
+  color: var(--accent-color);
+  font-weight: 700
+}
+
+/* All Buttons */
+.site-btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--background-color);
+  text-decoration: none;
+  font-family: var(--font-headers);
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-btn:hover,
+.site-btn:focus {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* Specific button spacing */
+.hero-btn,
+.reachout-btn,
+.contact-btn {
+  margin-top: 1rem;
+}
+
+.aboutus-btn {
+  margin: 0rem auto 2rem;
+  text-align: center;
+}
+
+
+/* Hero */
 .hero-banner {
   width: 100vw;
-  min-height: 350px;
+  min-height: 360px;
   background: url("../images/hero-banner.webp") center/cover no-repeat, var(--background-color);
   position: relative;
   left: 50%;
@@ -89,54 +146,37 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1rem;
-  box-sizing: border-box;
+  padding: 3rem 1rem;
 }
 
 .hero-box {
-  background: white;
+  background: var(--background-color);
   color: var(--text-color);
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   border: 4px solid var(--primary-color);
-  padding: 2.5rem 2rem;
-  max-width: 500px;
+  padding: 1.5rem;
+  max-width: 40rem;
   width: 100%;
   text-align: center;
   z-index: 1;
 }
 
 .hero-box h1 {
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
+  font-size: 2.5rem
 }
 
 .hero-box h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem
 }
 
-.hero-btn {
-  display: inline-block;
-  background: var(--primary-color);
-  color: var(--background-color);
-  font-family: var(--font-headers);
-  font-size: 1.15rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 2rem;
-  padding: 0.75em 2em;
-  margin-top: 1.5rem;
-  text-decoration: none;
-  cursor: pointer;
+.hero-box p {
+  margin: 0 auto;
+  max-width: 34rem
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  background: var(--accent-color);
-  color: var(--background-color);
-  text-decoration: none;
-  outline: none;
-}
-
+/* Stats */
 .stats-section {
   width: 100vw;
   position: relative;
@@ -145,7 +185,7 @@ nav a:hover {
   margin-left: -50vw;
   margin-right: -50vw;
   background: var(--background-color);
-  padding: 3rem 1rem;
+  padding: 2.5rem 1rem 0rem;
   display: flex;
   justify-content: center;
 }
@@ -154,9 +194,9 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1100px;
+  gap: 1.5rem;
   width: 100%;
-  gap: 2.5rem;
+  max-width: 1100px
 }
 
 .stats-left {
@@ -164,144 +204,279 @@ nav a:hover {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center
 }
 
 .stats-left h2 {
-  font-size: 2rem;
-  margin-bottom: .8rem;
-  color: var(--primary-color);
-  width: 100%;
   text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .stats-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: .5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.7rem
 }
 
-.stats-list li {
-  font-size: 1.3rem;
-  font-family: var(--font-body);
-  color: var(--primary-color);
+.stat-item {
+  text-align: center
 }
 
 .stat-number {
-  display: inline-block;
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: var(--accent-color);
-  margin-right: 0.6rem;
+  font: 700 2rem var(--font-headers);
+  color: var(--accent-color)
 }
 
 .stats-image {
   flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 0rem 1rem;
+  justify-content: center
 }
 
 .stats-image img {
   width: 100%;
-  border-radius: 1.5rem;
+  max-width: 30rem;
+  border-radius: 1rem;
 }
 
-.services {
-  margin: 3rem auto;
-  max-width: 700px;
-  background: #f7f7f7;
-  border-radius: 1rem;
-  padding: 2rem 1.5rem;
+/* About Us Section (Home PAge) */
+.aboutus-section {
+  padding: 2.5rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-inner {
+  width: 100%;
+  max-width: 1100px;
   text-align: center;
 }
 
+.aboutus-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem
+}
+
+.aboutus-p {
+  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto 1.5rem;
+}
+
+.aboutus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.aboutus-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+/* Reach Out Section */
+.reachout-section {
+  padding: 0rem 1rem 2rem;
+  background: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+}
+
+.reachout-inner {
+  width: 100%;
+  max-width: 46rem;
+  text-align: center;
+}
+
+.reachout-section h2 {
+  font-size: 2rem;
+  margin: 1rem 0rem 0rem;
+}
+
+/* About */
+.page-header {
+  margin: 1rem 0;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0
+}
+
+.card {
+  padding: 1rem 1rem;
+  border: 1px solid var(--primary-color);
+  background: var(--background-color);
+  color: var(--primary-color);
+  border-radius: 1rem;
+  font-size: 1rem
+}
+
+.card-active,
+.card:hover {
+  background: var(--primary-color);
+  color: var(--background-color)
+}
+
+.team-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.team-card {
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  background: var(--background-color);
+}
+
+.team-card h3 {
+  margin-bottom: .35rem
+}
+
+.team-role {
+  font-weight: 600;
+  color: var(--accent-color)
+}
+
+.team-position {
+  font-style: italic;
+  color: var(--primary-color)
+}
+
+.team-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: .5rem;
+  margin: .5rem 0;
+}
+
+/* Contact */
+.contact-box {
+  background: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 1rem;
+  padding: 1rem 1rem 1.25rem;
+  display: grid;
+  gap: .75rem;
+}
+
+.contact-box label {
+  display: grid;
+  gap: .35rem;
+  font-weight: 600
+}
+
+.contact-box input,
+.contact-box textarea {
+  padding: .6rem .7rem;
+  border: 1px solid #cfd6dd;
+  border-radius: .5rem;
+  font: inherit;
+  color: inherit
+}
+
+/* Footer */
 footer {
-  background-color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--background-color);
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  margin-top: 2rem
 }
 
 footer p,
 footer span,
 footer a {
-  color: white !important;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--background-color) !important
 }
 
-/* larger screen styling below */
+/* ========== Breakpoint (>=600px) ========== */
+@media (min-width:600px) {
 
-@media screen and (min-width: 600px) {
+  /* Home Page */
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    flex-wrap: wrap;
-  }
-
-  header img {
-    width: 8rem;
+    padding: 1rem 2rem
   }
 
   #menu {
-    display: none;
+    display: none
   }
 
   #nav-menu {
     display: flex !important;
     flex-direction: row;
     gap: 2rem;
-    background-color: transparent;
-    margin-right: 8rem;
+    background: transparent
   }
 
   nav {
     display: flex !important;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 1rem
   }
 
   .hero-banner {
-    min-height: 200px;
-    padding: 2rem 1rem;
+    min-height: 420px;
+    padding: 4rem 1rem
   }
 
   .hero-box {
-    padding: 2rem 4rem;
-    max-width: 700px;
-    font-size: 1.2rem;
+    padding: 2rem
   }
 
   .stats-content {
     flex-direction: row;
     align-items: stretch;
-    gap: 3.5rem;
-  }
-
-  .stats-left,
-  .stats-image {
-    flex: 1;
-  }
-
-  .stats-section {
-    padding: 3rem 1rem;
-  }
-
-  .stats-list li {
-    font-size: 1.5rem;
+    gap: 3rem
   }
 
   .stat-number {
-    font-size: 2.8rem;
+    font-size: 2.6rem
   }
 
-  .services {
-    margin-top: 4rem;
-    padding: 2.5rem 3rem;
+  .aboutus-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+
+  /* About Page */
+  .card {
+    font-size: 1.2rem
+  }
+
+  .team-grid {
+    margin: 0vw 12vw;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+  }
+
+  /* Contact Page */
+  .contact-box {
+    margin: 0vw 15vw;
   }
 }

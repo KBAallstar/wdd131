@@ -16,20 +16,20 @@
   <script src="scripts/scripts.js" defer></script>
 </head>
 
-<body>
+<body data-page="home">
   <header>
     <a href="index.html">
-      <img src="images/jester-logo-white.svg" alt="Jester FEC Logo">
+      <img src="images/jester-logo-white.svg" alt="Jester FEC Logo" class="site-logo">
     </a>
     <button id="menu">&#9776;</button>
     <nav id="nav-menu">
-      <a href="index.html">HOME</a>
+      <a href="index.html" class="active">HOME</a>
       <a href="about.html">MEET THE TEAM</a>
-      <a href="siteplan.html">CONTACT US</a>
+      <a href="contact.html">CONTACT US</a>
     </nav>
   </header>
 
-  <main>
+  <main class="content">
     <section class="hero-banner">
       <div class="hero-box">
         <h1>JESTER FEC</h1>
@@ -39,7 +39,7 @@
           industry, we know how to design, build, and operate award winning
           indoor theme parks!
         </p>
-        <a href="contact.html" class="hero-btn">CONTACT US</a>
+        <a href="contact.html" class="site-btn hero-btn">CONTACT US</a>
       </div>
     </section>
 
@@ -57,6 +57,51 @@
         <div class="stats-image">
           <img src="images/coaster.webp" alt="Roller Coaster at Malibu Jack's">
         </div>
+      </div>
+    </section>
+
+    <section class="aboutus-section">
+      <div class="aboutus-inner">
+        <h2>WHAT WE DO</h2>
+        <p class="aboutus-p">
+          Jester FEC is the team behind Malibu Jack's Indoor Theme Parks. We carefully plan, construct, and operate
+          tropical themed indoor theme parks with attractions
+          such as go karts, bowling, laser tag, motion simulators, virtual reality, coaster rides, drop zones, bumper
+          cars, kid's play zones, arcade games, and more!
+        </p>
+        <a href="about.html" class="site-btn aboutus-btn">MEET THE TEAM</a>
+
+        <div class="aboutus-grid">
+          <!-- Top row -->
+          <img src="images/about-01.webp" alt="Malibu Jack's exterior">
+          <img src="images/about-02.webp" alt="Family riding indoor coaster">
+          <img src="images/about-03.webp" alt="Hollywood Speedway entrance">
+          <img src="images/about-04.webp" alt="Mini golf course with plane">
+          <img src="images/about-05.webp" alt="VR attraction">
+          <!-- Bottom row -->
+          <img src="images/about-06.webp" alt="Arcade blaster game">
+          <img src="images/about-07.webp" alt="Laser-lit ride area">
+          <img src="images/about-08.webp" alt="Indoor go-karts">
+          <img src="images/about-09.webp" alt="Boardwalk bowling area">
+          <img src="images/about-10.webp" alt="Basketball arcade">
+        </div>
+      </div>
+    </section>
+
+    <section class="reachout-section">
+      <div class="reachout-inner">
+        <h2>REACH OUT TO US!</h2>
+        <p>
+          The Jester FEC corporate office is located in the "heart of the blugrass," Lexington, KY. Please send
+          correspondence to the address below or fill out a contact form.
+        </p>
+        <br>
+        <p>
+          Jester FEC Corporate Office<br>
+          220 Lexington Green Circle, Suite 310<br>
+          Lexington, Kentucky 40503
+        </p>
+        <a href="contact.html" class="site-btn reachout-btn">CONTACT US</a>
       </div>
     </section>
   </main>
